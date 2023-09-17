@@ -1,6 +1,7 @@
 ---
 - name: Demo playbook to test apache install
   hosts: all
+  become: yes
   tasks:
     
     - name: Install httpd package on web server
