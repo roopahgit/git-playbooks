@@ -1,0 +1,9 @@
+---
+- name: To install apache  
+  hosts: all
+  tasks: 
+    - name: To install apache on webserver
+       apt:
+         name: apache2
+         state: latest
+
