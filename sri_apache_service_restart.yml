@@ -1,0 +1,9 @@
+---
+- name: Start apache service
+  hosts: all
+  become: yes
+  tasks:
+     - name: restart apache service on webserver
+       service: 
+          name: httpd
+          state: restarted
