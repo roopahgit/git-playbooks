@@ -1,0 +1,8 @@
+﻿---
+- name: write a sample ansible playbook
+  hosts: all
+  tasks: 
+    - name: print a welcome message
+      debug: 
+        msg: Welcome to my first ansible playbook!
+
