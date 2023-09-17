@@ -1,8 +1,9 @@
 ---
-- name: To install apache  
+- name: Demo playbook to test apache install
   hosts: all
-  tasks: 
-    - name: To install apache on webserver
-       yum:
-         name: httpd 
-         state: latest
+  tasks:
+    
+    - name: Install httpd package on web server
+      yum:
+        name: httpd
+        state: latest
